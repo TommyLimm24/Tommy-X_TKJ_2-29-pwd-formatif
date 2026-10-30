@@ -15,7 +15,7 @@ body {
    ========================================== */
 #about {
     /* Alamat gambar dihitung dari lokasi file CSS (keluar dari styles/, masuk ke assets/images/) */
-    background-image: url('../assets/images/Tommy-Lim.jpeg');
+    background-image: url('../assets/images/Bali.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
