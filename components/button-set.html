@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumpulan Tombol</title>
+    <style>
+        /* 2. body: latar terang, font Arial dengan cadangan sans-serif */
+        body {
+            background-color: #f4f7f6;
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        /* 3. h2: warna gelap dan ukuran 20px */
+        main > h2 {
+            color: #2c3e50;
+            font-size: 20px;
+        }
+
+        /* 4. .btn (Class umum semua tombol) */
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer; /* Tantangan: mengubah kursor menjadi tangan */
+            transition: background-color 0.3s ease;
+        }
+
+        /* 5. .button-group .btn (Descendant selector untuk jarak antar tombol) */
+        .button-group .btn {
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* 6. Warna latar berbeda untuk masing-masing tombol */
+        .btn-primary {
+            background-color: navy; /* Cara 1: Nama warna */
+            color: white;
+        }
+
+        .btn-secondary {
+            background-color: #3498db; /* Cara 2: Hex */
+            color: #ffffff;
+        }
+
+        .btn-outline {
+            background-color: white;
+            border: 2px solid #2c3e50;
+            /* 7. Grouping: .btn-secondary dan .btn-outline berbagi warna tulisan gelap */
+        }
+        .btn-secondary, .btn-outline {
+            color: #2c3e50;
+        }
+
+        .btn-send {
+            background-color: rgb(230, 126, 34); /* Cara 3: RGB */
+            color: white;
+        }
+
+        /* 8. Pseudo-class :hover untuk mengubah warna tombol saat kursor di atasnya */
+        .btn-primary:hover {
+            background-color: rgb(0, 0, 128); 
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(41, 128, 185, 0.9); /* Cara 4: RGBA */
+        }
+
+        .btn-outline:hover {
+            background-color: #ecf0f1;
+        }
+
+        .btn-send:hover {
+            background-color: #d35400;
+        }
+
+        /* Styling tambahan untuk footer */
+        footer {
+            margin-top: 20px;
+        }
+        footer a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h2>Nomor 1.2 - Kumpulan Tombol</h2>
+
+        <!-- Div pembungkus dengan class button-group -->
+        <div class="button-group">
+            <!-- Tombol 1 -->
+            <a href="#" class="btn btn-primary">Lihat Proyek</a>
+            
+            <!-- Tombol 2 -->
+            <a href="#" class="btn btn-secondary">Unduh CV</a>
+            
+            <!-- Tombol 3 -->
+            <a href="#" class="btn btn-outline">Hubungi Saya</a>
+            
+            <!-- Tombol 4 -->
+            <a href="#" class="btn btn-send">Kirim Pesan</a>
+        </div>
+
+        <footer>
+            <a href="../index.html">Kembali ke Beranda</a>
+        </footer>
+    </main>
+
+</body>
+</html>
