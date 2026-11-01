@@ -1,0 +1,51 @@
+/* 1. body (Tag): margin 0 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 2. #main-header (ID): latar gelap */
+#main-header {
+    background-color: #1e293b;
+}
+
+/* 3. .navbar (Class): display flex, justify-content space-between, 
+   align-items center, padding 15px atas-bawah & 30px kiri-kanan */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+/* 4. .logo (Class): tulisan terang, ukuran 22px, dan tebal */
+.logo {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* 5. .nav-menu (Class): display flex, gap 24px, margin & padding 0 */
+.nav-menu {
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+/* 6. .nav-menu > li (Child): tanda titik di depan menu dihilangkan */
+.nav-menu > li {
+    list-style: none;
+}
+
+/* 7. .nav-menu a (Descendant): tulisan terang dan tanpa garis bawah */
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* 8. .nav-menu a:hover (Pseudo-class): warna tulisan berubah */
+.nav-menu a:hover {
+    color: #38bdf8;
+}
