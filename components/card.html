@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nomor 2.1 - Kartu Proyek</title>
+  <style>
+    /* 2. Selector bintang * (Universal): box-sizing border-box untuk semua elemen */
+    * {
+      box-sizing: border-box;
+    }
+
+    /* 3. body (Tag): margin 0, latar terang, dan font dengan font cadangan */
+    body {
+      margin: 0;
+      background-color: #f4f6f8;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Pembungkus isi (main) untuk menempatkan kartu di tengah */
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 80vh;
+    }
+
+    /* 4. .card (Class): lebar 320px, padding 20px, border 2px solid, margin 30px di atas-bawah */
+    .card {
+      width: 320px;
+      padding: 20px;
+      border: 2px solid #ccc;
+      margin: 30px auto;
+      background-color: #ffffff;
+      border-radius: 8px; /* Tantangan: sudut membulat */
+    }
+
+    /* 5. .card img (Descendant): lebar 100%, tinggi 160px, display block */
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+      border-radius: 4px;
+    }
+
+    /* 6. .card h3 (Descendant): warna gelap dan margin bawah 8px */
+    .card h3 {
+      color: #1a2530;
+      margin-top: 15px;
+      margin-bottom: 8px;
+    }
+
+    /* 7. .card p (Descendant): ukuran huruf 15px untuk paragraf */
+    .card p {
+      font-size: 15px;
+      color: #555555;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+
+    /* 7. .card a (Descendant): warna berbeda untuk tautan */
+    .card a {
+      font-size: 15px;
+      color: #e67e22;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer di luar kartu */
+    footer {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    footer a {
+      color: #6b46c1;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- main: pembungkus isi -->
+  <main>
+    <!-- div dengan class card -->
+    <div class="card">
+      <!-- img di dalam card -->
+      <img src="https://via.placeholder.com/320x160" alt="Gambar Proyek">
+      
+      <!-- h3 di dalam card -->
+      <h3>Website Toko Online</h3>
+      
+      <!-- p di dalam card (berisi dua kalimat) -->
+      <p>Proyek latihan membuat halaman toko sederhana. Dibuat memakai HTML dan CSS.</p>
+      
+      <!-- a di dalam card -->
+      <a href="#">Lihat Proyek</a>
+    </div>
+  </main>
+
+  <!-- footer berisi tautan "Kembali ke Beranda" -->
+  <footer>
+    <a href="#">Kembali ke Beranda</a>
+  </footer>
+
+</body>
+</html>
