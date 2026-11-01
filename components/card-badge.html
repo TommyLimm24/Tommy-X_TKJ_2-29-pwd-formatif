@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nomor 2.2 - Kartu dengan Label dan Tombol Ke Atas</title>
+  <style>
+    /* Universal selector untuk box-sizing */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: #f4f6f8;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* 2. #top (ID): padding, latar gelap, tulisan terang, dan tujuan tautan "Ke Atas" */
+    header#top {
+      background-color: #1a2530;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header#top h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    /* Pembungkus isi (main) */
+    main {
+      padding: 20px 0;
+    }
+
+    /* 3. .card (Class): position relative, lebar 360 px, margin atas-bawah dengan kartu di tengah, dan border */
+    .card {
+      position: relative;
+      width: 360px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      border: 1px solid #dcdde1;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* 4. .card .badge (Descendant): position absolute, menempel 10px dari pojok kanan atas kartu, berlatar warna, bersudut membulat, berpadding kecil */
+    .card .badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #e67e22;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    .card h3 {
+      margin: 15px 15px 5px 15px;
+      color: #1a2530;
+    }
+
+    .card p {
+      margin: 0 15px 20px 15px;
+      color: #555555;
+      font-size: 14px;
+    }
+
+    /* 7. main p (Descendant): lebar 360 px dan berada di tengah, supaya paragraf pengisi sejajar dengan kartu */
+    main > p {
+      width: 360px;
+      margin: 15px auto;
+      color: #555555;
+      font-size: 14px;
+      line-height: 1.5;
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 6px;
+      border: 1px solid #dcdde1;
+    }
+
+    footer {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    footer a {
+      color: #6b46c1;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+
+    /* 5. .back-to-top (Class): position fixed di pojok kanan bawah layar (20 px dari tepi), tetap terlihat saat halaman digulir, dan z-index */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #1a2530;
+      color: #ffffff;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+      z-index: 1000;
+      transition: background-color 0.2s;
+    }
+
+    /* 6. .back-to-top:hover (Pseudo-class): warna latar berubah */
+    .back-to-top:hover {
+      background-color: #e67e22;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- header dengan id top -->
+  <header id="top">
+    <h1>Proyek Saya</h1>
+  </header>
+
+  <!-- main: pembungkus isi -->
+  <main>
+    <!-- div dengan class card -->
+    <div class="card">
+      <span class="badge">BARU</span>
+      <img src="../assets/images/Bali.jpg" alt="Gambar Proyek">
+      <h3>Aplikasi Catatan Harian</h3>
+      <p>Proyek terbaru saya: halaman pencatat kegiatan harian dengan tampilan sederhana.</p>
+    </div>
+
+    <!-- Paragraf pengisi minimal 6 agar halaman bisa digulir (scroll) -->
+    <p>Paragraf pengisi 1. Bagian ini sengaja dibuat panjang agar halaman bisa digulir dan tombol "Ke Atas" terlihat tetap berada di pojok layar.</p>
+    <p>Paragraf pengisi 2. Bagian ini sengaja dibuat panjang agar
