@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Samping & Tata Letak Halaman</title>
+    
+    <!-- CSS Internal ditulis di dalam tag style -->
+    <style>
+        /* 2. Selector bintang * (Universal): box-sizing border-box, body: margin 0 */
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8fafc;
+        }
+
+        /* 3. .layout (Class): Flexbox (display flex) untuk dua kolom berdampingan */
+        .layout {
+            display: flex;
+            min-height: 85vh; /* Menjaga tinggi sidebar dan konten utama agar seimbang */
+        }
+
+        /* 4. #sidebar (ID): lebar 25%, latar gelap, tulisan terang, padding 20px */
+        #sidebar {
+            width: 25%;
+            background-color: #1e293b;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        #sidebar h3 {
+            margin-top: 0;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* 5. #sidebar nav (Descendant): tautan tersusun ke bawah dengan jarak 12px */
+        #sidebar nav {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        /* 6. #sidebar a (Descendant): tulisan terang dan tanpa garis bawah */
+        #sidebar a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+
+        /* 6. #sidebar a:hover (Pseudo-class): warna berubah */
+        #sidebar a:hover {
+            color: #ffffff;
+        }
+
+        /* 7. .main-content (Class): lebar 75% dan padding 30px */
+        .main-content {
+            width: 75%;
+            padding: 30px;
+            background-color: #f8fafc;
+        }
+
+        /* 8. .main-content h1 dan .main-content p: warna judul dan jarak antar paragraf */
+        .main-content h1 {
+            color: #1e293b;
+            font-size: 28px;
+            margin-top: 0;
+        }
+
+        .main-content p {
+            color: #475569;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        /* 9. footer (Tag): tulisan rata tengah, padding 14 px, dan latar abu-abu */
+        footer {
+            text-align: center;
+            padding: 14px;
+            background-color: #cbd5e1;
+        }
+
+        footer a {
+            color: #4338ca;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Pembungkus aside dan main -->
+    <div class="layout">
+        
+        <!-- Aside dengan id sidebar -->
+        <aside id="sidebar">
+            <h3>Menu</h3>
+            <nav>
+                <a href="#">Profil</a>
+                <a href="#">Proyek</a>
+                <a href="#">Keahlian</a>
+                <a href="#">Kontak</a>
+            </nav>
+        </aside>
+
+        <!-- Main dengan class main-content -->
+        <main class="main-content">
+            <h1>Profil Saya</h1>
+            <p>Saya Tommy, siswa kelas X TKJ 2. Saya sedang belajar membuat website dengan HTML dan CSS.</p>
+            <p>Di halaman ini ada ringkasan tentang saya, proyek yang sudah dibuat, dan kemampuan yang sedang dipelajari.</p>
+            <p>Gunakan menu di sebelah kiri untuk berpindah antar bagian portofolio saya.</p>
+        </main>
+
+    </div>
+
+    <!-- Footer di luar layout -->
+    <footer>
+        <a href="#">Kembali ke Beranda</a>
+    </footer>
+
+</body>
+</html>
