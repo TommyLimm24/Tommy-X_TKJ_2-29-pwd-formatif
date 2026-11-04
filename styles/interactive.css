@@ -1,0 +1,43 @@
+
+.menu a {
+    transition: color 0.3s ease;
+}
+
+/* 3. Warna tulisan berubah saat hover */
+.menu a:hover {
+    color: #d97706; /* Contoh warna oranye */
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.btn-grow {
+    background-color: #3b82f6;
+    transition: transform 0.3s ease-out;
+}
+
+.btn-grow:hover {
+    transform: scale(1.05);
+}
+
+
+.btn-darken {
+    background-color: #f97316;
+    transition: background-color 0.4s linear;
+}
+
+.btn-darken:hover {
+    background-color: #c2410c;
+}
+
+
+a:focus {
+    outline: 2px solid #000;
+}
