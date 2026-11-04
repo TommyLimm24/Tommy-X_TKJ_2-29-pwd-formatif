@@ -1,0 +1,72 @@
+/* 2. Pengaturan #hero */
+#hero {
+    height: 400px;
+    background-image: url('../assets/images/Bali.jpg'); /* Sesuaikan path gambar latar */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* 3. Pengaturan .hero-content */
+.hero-content {
+    width: 640px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Latar transparan agar tulisan terbaca */
+    color: white;
+}
+
+/* 4. Grouping Selector untuk h1 dan p (animasi slide-up) */
+.hero-content h1, 
+.hero-content p {
+    animation-name: slide-up;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+}
+
+/* 5. Mengubah delay paragraf (p) agar muncul setelah judul (h1) */
+.hero-content p {
+    animation-delay: 0.6s;
+}
+
+/* Tombol sederhana */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #f97316;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* 6. Definisi @keyframes slide-up (lima tahap) */
+@keyframes slide-up {
+    0% {
+        transform: translateY(60px);
+        opacity: 0;
+    }
+    25% {
+        transform: translateY(40px);
+        opacity: 0.25;
+    }
+    50% {
+        transform: translateY(20px);
+        opacity: 0.5;
+    }
+    75% {
+        transform: translateY(8px);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
