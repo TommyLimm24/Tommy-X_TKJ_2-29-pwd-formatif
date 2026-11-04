@@ -1,0 +1,52 @@
+/* 2. Pengaturan Header (rata tengah, latar gelap, tulisan terang) */
+header {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* 3. Grouping Selector, ID, dan Descendant untuk Judul Section */
+#components h2, 
+#pages h2 {
+    color: #1e3a8a;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 5px;
+}
+
+/* 4. Descendant Selector untuk Tautan di dalam Main */
+main a {
+    color: #d97706; /* Warna tautan berbeda dari warna biasa */
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+/* 5. Pengaturan Footer (kecil, rata tengah, latar berwarna) */
+footer {
+    background-color: #e2e8f0;
+    color: #334155;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+/* Penataan umum kontainer */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8fafc;
+}
+
+main {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
